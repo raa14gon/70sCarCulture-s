@@ -50,14 +50,16 @@ Welcome to **70s Car Culture**, a web application dedicated to the golden era of
 
 ## 📦 Deployment
 
-This project is configured for **Automated Deployment** using GitHub Actions.
+## 📦 Deployment
+
+This project is deployed on **Vercel**.
 
 To deploy changes:
 1.  **Commit and Push** your changes to the `main` branch.
-2.  GitHub Actions will automatically build the project and deploy it to the `gh-pages` branch.
-3.  Visit your site at: `https://raa14gon.github.io/70sCarCulture-s/`
+2.  Vercel will automatically build and deploy the new version.
+3.  Visit your site at: `https://carculture-o8opknudb-rafaels-projects-7ed866c3.vercel.app/`
 
-*(Note: The deployment process may take 1-2 minutes after pushing).*
+*(Note: Ensure your Vercel project settings are using the default Output Directory `dist`)*
 
 
 ## 📂 Project Structure
