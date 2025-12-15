@@ -12,7 +12,12 @@ export default defineConfig({
       '/wiki': {
         target: 'https://en.wikipedia.org',
         changeOrigin: true,
-        rewrite: path => path.replace(/^\/wiki/, '/api/rest_v1')
+        rewrite: path => path.replace(/^\/wiki/, '/api/rest_v1'),
+        configure: (proxy, options) => {
+          proxy.on('proxyRes', (proxyRes, req, res) => {
+            delete proxyRes.headers['set-cookie']
+          })
+        }
       }
     }
   }
