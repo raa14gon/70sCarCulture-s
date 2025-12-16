@@ -71,11 +71,11 @@ export default {
             const title = race.raceName.replace(/ /g, '_')
             this.history = await getRaceHistory(title)
 
-            try {
-                new Audio('/sounds/beep.mp3').play().catch(() => { })
-            } catch (error) {
-                console.warn('Could not play sound:', error)
-            }
+            // try {
+            //     new Audio('/sounds/beep.mp3').play().catch(() => { })
+            // } catch (error) {
+            //     console.warn('Could not play sound:', error)
+            // }
         }
     }
 }
