@@ -1,0 +1,11 @@
+# .gitignore
+
+# Dependencies
+node_modules/
+
+# Build directory
+dist/
+
+# System files
+.DS_Store
+Thumbs.db
