@@ -46,6 +46,16 @@ export default {
   min-height: 200px;
 }
 
+.details h3 {
+  font-size: 18px;
+  margin: 0 0 12px 0;
+}
+
+.details p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
 .details.no-race {
   display: flex;
   align-items: center;
@@ -74,5 +84,108 @@ export default {
   color: #ffaa00;
   font-size: 12px;
   margin: 0;
+}
+
+/* Media Queries - Tablets */
+@media (max-width: 1024px) {
+  .details {
+    padding: 14px;
+    min-height: 180px;
+  }
+
+  .details h3 {
+    font-size: 16px;
+  }
+
+  .details p {
+    font-size: 13px;
+  }
+
+  .history h4 {
+    font-size: 13px;
+  }
+
+  .extract {
+    font-size: 11px;
+  }
+}
+
+/* Media Queries - Mobile */
+@media (max-width: 768px) {
+  .details {
+    margin-top: 15px;
+    padding: 12px;
+    min-height: 150px;
+  }
+
+  .details h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .details p {
+    font-size: 12px;
+    margin: 6px 0;
+  }
+
+  .history {
+    margin-top: 12px;
+    padding-top: 12px;
+  }
+
+  .history h4 {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .extract {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+
+  .no-data,
+  .loading {
+    font-size: 11px;
+  }
+}
+
+/* Media Queries - Small Mobile */
+@media (max-width: 480px) {
+  .details {
+    margin-top: 10px;
+    padding: 10px;
+    min-height: 120px;
+    border: 1px solid #00ff66;
+  }
+
+  .details h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .details p {
+    font-size: 11px;
+    margin: 5px 0;
+  }
+
+  .history {
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  .history h4 {
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+
+  .extract {
+    font-size: 10px;
+    line-height: 1.3;
+  }
+
+  .no-data,
+  .loading {
+    font-size: 10px;
+  }
 }
 </style>
